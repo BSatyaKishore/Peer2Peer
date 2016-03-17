@@ -14,7 +14,7 @@ def SendToPeer(data, addr):
 		return
 	print "Sending ", str(connections[data]), addr
 	sock.sendto(str(connections[data]), addr)
-	print "Sent"
+	#print "Sent"
 
 while True:
 	rec_data, addr = sock.recvfrom(2048) # buffer size is 1024 bytes

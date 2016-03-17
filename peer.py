@@ -19,7 +19,7 @@ def GetAddressFromString(address):
 
 def SendToPeer(Peer,message):
 	address = GetPeerAddress(Peer)
-	print "Send to peer", Peer, message
+	#print "Send to peer", Peer, message
 	sock.sendto(message, GetAddressFromString(address))
 
 ServerAddress = None
@@ -38,7 +38,7 @@ while True:
 		message = raw_input("Enter Message: ")
 		SendToPeer(peer,message)
 		recv_data, addr = sock.recvfrom(2048)
-		print recv_data, addr
+		print "Recieved :",recv_data, addr
 	except socket.error as (code, msg):
 		if code != errno.EINTR:
 			print "Test"
