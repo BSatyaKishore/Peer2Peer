@@ -2,7 +2,6 @@
 A simple implementation of Peer to Peer Messaging Application with Central Server in Python using UDP
 
 ## Synopsis
-There are 2 parts in the project:
 1. Server:
    The main work of the server is to get the address of all the Peers and send it to other Peers on request
 2. Client:
