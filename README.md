@@ -1,5 +1,5 @@
 ## Peer to Peer
-A simple implementation of Peer to Peer Messaging Application with Central Server in Python using UDP
+A simple implementation of Peer to Peer (also provides NAT traversal) Messaging Application with Central Server in Python using UDP
 
 ## Synopsis
 1. Server:
